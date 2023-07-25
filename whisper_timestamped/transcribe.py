@@ -1647,7 +1647,7 @@ def round_confidence(x):
     return round(x, 3)
 
 def round_timestamp(x):
-    return round(x, 2)
+    return round(x, 3)
 
 _punctuation = "".join(c for c in string.punctuation if c not in ["-", "'"]) + "。，！？：”、…"
 
