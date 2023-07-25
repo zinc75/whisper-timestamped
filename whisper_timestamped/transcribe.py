@@ -1135,8 +1135,8 @@ def _transcribe_timestamped_naive(
             
             for word in ws:
 
-                word["start"] = round(word["start"] + start, 2)
-                word["end"] = round(word["end"] + start, 2)
+                word["start"] = round(word["start"] + start, 3)
+                word["end"] = round(word["end"] + start, 3)
                 
                 if trust_whisper_timestamps:
                     word.update({"idx_segment": i_segment})
